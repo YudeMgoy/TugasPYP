@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <style>        
+
+        @media only screen and (max-width: 945px) {
+          .header-image {
+            display:none !important;
+          }
+
+          .header{
+            top: 20% !important;
+            padding: 0 20px !important;
+          }                    
+        }
+
+        body{
+          overflow-x: hidden;
+        }
+
+        .wmd-container{
+          margin-top: 100px;
+          width: 100%;
+          position:relative;
+          display: flex;
+          flex-flow: column;          
+          margin-bottom: 100px;
+        }
+
+        .wmd-container h3{
+          font-weight: bold;
+          font-size: 2.4em;        
+        }
+
+        .wmd-box{
+          display: flex;
+          position: relative;
+          width: 60%;
+          margin: auto;
+          flex-flow: row wrap;
+          justify-content: center;
+          margin-top: 60px;
+        }
+
+        .box{
+          flex: 1;
+          flex-basis: 20%;
+          margin: 20px;
+          border-radius: 20px;
+          -webkit-box-shadow: 0px 5px 8px 1px rgba(0,0,0,0.3);
+          -moz-box-shadow: 0px 5px 8px 1px rgba(0,0,0,0.3);
+          box-shadow: 0px 5px 8px 1px rgba(0,0,0,0.3);
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-flow: column;      
+          min-width: 250px;
+          max-width: 300px;              
+        }
+
+        .box img{
+          margin: auto;
+        }
+
+        .box h4{
+          font-size: 1.2em;
+          color: #333;
+          font-weight: bold;
+        }
+
+        .box p{
+          color: #666;
+        }
+
+        .footer{
+          width: 100%;
+          padding: 10px 100px;
+          background-color: #eee;
+          margin: 0;          
+          display: flex;
+        }
+
+        .footer p{
+          margin: auto 0;
+          color: #555;
+          font-size: .8em;          
+        }
+      </style>      
+    </head>
+
+    <body>
+        <div class="navbar-fixed" style="height: 80px;opacity:0.9;position: fixed;top:0">
+            <nav style="height: 80px;">
+                <div class="nav-wrapper" style="background-color: #F5F8FD;padding: 0 100px">
+                    <a href="#" class="brand-logo" style="height:100%;">
+                        <div style="display:flex;height: 100%">
+                            <img src="./image/Frame.svg" style="margin:auto">
+                        </div>                    
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down" style="height:100%;display:flex;">
+                        <li style="margin: auto 10px;"><a href="" class="black-text" style="font-size: 1.2em;">FAQ</a></li>
+                        <li style="margin: auto 10px;"><a href="" class="black-text" style="font-size: 1.2em;">Location</a></li>
+                        <li style="margin: auto 10px;"><a href="" class="black-text" style="font-size: 1.2em;">Contact</a></li>
+                        <a class="waves-effect waves-light btn blue" style="font-weight: bold; border-radius: 20px;margin: auto 10px;">Donate</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div style="overflow:hidden;display:flex;width: 100%;">                                                      
+            <img src="./image/bg-vector.png" style="width:100%;min-width:1000px;position: relative;transform: translateX(-50%);left:50%">
+            <div class="header" style="position:absolute;top:30%;left:0;display: flex;flex-flow: row nowrap;width: 100%;padding: 0 100px;justify-content: space-between;">
+              <div style="flex:1;flex-basis: 50%;">
+                <h3 style="font-weight: bold;color:white;letter-spacing: 2px;margin:0;">FIGHT CORONA VIRUS</h3> 
+                <h3 style="font-weight: bold;color:white;letter-spacing: 2px;margin-top:10px">#StayAtHome</h3> 
+                <p style="color:white;margin-top:20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <div style="display: flex;flex-flow: row nowrap;margin-top:40px;">
+                  <a href="#" style="margin:0 0px;padding: 10px 30px;color:#3379CE;border-radius:40px; background-color:white;font-size:1.2em;font-weight: bold;">Learn More</a>
+                  <a href="#" style="margin:0 20px;color:white;padding: 10px 30px;border-radius:40px; background-color:rgba(0,0,0,0);border:2px solid white;font-size:1.2em;font-weight: bold;">Contact Us</a>
+                </div>
+              </div>
+              <div class="header-image" style="flex:1;flex-basis: 50%;display: flex;height:100%;">
+                <img src="./image/illustration-head.png" alt="" style="margin: auto;margin-right:0;height:340px">
+              </div>
+            </div>            
+        </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <div class="wmd-container">
+        <h3 class="center">What Must We Do?</h3>
+        <div class="wmd-box">
+          <div class="box">
+            <a href="">
+              <img src="./image/wfh.png" alt="">
+              <h4>#StayAtHome</h4>
+              <p>Work from home, learn from home, and worship at home</p>
+            </a>
+          </div>          
+          <div class="box">
+            <a href="">
+              <img src="./image/wash.png" alt="">
+              <h4>Wash Hand</h4>
+              <p>Use soap and water for at least 20 seconds or use alcohol-based hand sanitizers for at
+                least 60%</p>
+            </a>
+          </div>          
+          <div class="box">
+            <a href="">
+              <img src="./image/mask.png" alt="">
+              <h4>Wear A Mask</h4>
+              <p>If you have to do activities outside the home and replace it periodically</p>
+            </a>
+          </div>          
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <p>Created with <i class="material-icons">devices</i> by Wahyudi</p>
+      </div>
+    </body>
+  </html>
+        
